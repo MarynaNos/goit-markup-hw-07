@@ -566,11 +566,11 @@ footer {
 .socials__link:focus {
     background-color: var(--active-color);
 }
-.submit-container{
+.submit__container{
     display: flex;
     gap: 12px;
 }
-.submit-footer{
+.submit__sign{
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -579,7 +579,7 @@ footer {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.submit-email{
+.submit__email{
     width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -600,7 +600,7 @@ footer {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.submit-btn{
+.submit__btn{
     display: flex;
     width: 200px;
     height: 50px;
@@ -622,7 +622,7 @@ footer {
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-.submit-icon{
+.submit__icon{
     width: 24px;
     height: 24px;
     align-items: center;
