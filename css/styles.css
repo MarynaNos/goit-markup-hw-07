@@ -229,7 +229,7 @@ body {
 .works{
     padding-top: 0;
 }
-.works__box{
+.works__list {
     display: flex;
     gap: 30px;
 }
@@ -247,7 +247,7 @@ body {
     min-height: 70px;
     background: rgba(47, 48, 58, 0.8);
 }
-.works-overlay-text{
+.works__overlay-title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -295,20 +295,20 @@ body {
 .team{
     background-color: #F5F4FA;
 }
-.team-list{
+.team__list{
     display: flex;
     gap: 30px;
 }
-.team-box{
+.team__item{
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.name-card{
+.team__card{
     padding-top: 30px; 
     margin-bottom: 16px;
 }
-.name {
+.team__name {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -316,20 +316,20 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.position {
+.team__position {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
-.social-list{
+.team__socials-list{
     display: flex;
     justify-content: center;
     gap: 10px;
     padding-bottom: 30px;
 }
-.social-link{
+.team__social-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,15 +341,15 @@ body {
        fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover,
-.social-link:focus{
+.team__social-link:hover,
+.team__social-link:focus{
     fill: var(--background-color);
     background-color: var(--active-color);
 }
 .clients{
     padding-bottom: 86px;
 }
-.client-link{
+.clients__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,19 +359,19 @@ body {
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list{
+.clients__list{
     display: flex;
     gap: 30px;
 }
-.client-link:hover .client-icon,
-.client-link:focus .client-icon{
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon{
     fill: var(--active-color); 
 }
-.client-link:hover,
-.client-link:focus{
+.clients__link:hover,
+.clients__link:focus{
     border-color: var(--active-color);    
 }
-.client-icon{
+.clients__icon{
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
@@ -479,23 +479,23 @@ footer {
     padding-bottom: 60px;
     background: #2F303A;
 }
-.footer-container{
+.footer{
     display: flex;
     align-items: baseline;
 }
-.contacts-container-footer{
+.footer__contacts-container{
     margin-right: 70px;
 }
-.socials-container-footer{
+.socials{
     min-width: 206px;
     min-height: 80px;
     margin-right: 93px;
 }
-.footer-logo{
+.footer__logo{
     display: inline-block;
     margin-bottom: 20px;
 }
-.footer-logo-web {
+.footer__logo-web {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -503,7 +503,7 @@ footer {
     letter-spacing: 0.03em;
     color: var(--logo-web-color);
 }
-.footer-logo-studio {
+.footer__logo-studio {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -520,10 +520,10 @@ footer {
     color: #FFFFFF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-list-footer:not(:last-child){
+.contacts:not(:last-child){
     margin-bottom: 9px;
 }
-.contacts-footer {
+.contacts__item {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
@@ -534,11 +534,11 @@ footer {
 }
 .address:hover,
 .address:focus,
-.contacts-footer:hover,
-.contacts-footer:focus {
+.contacts__item:hover,
+.contacts__item:focus {
     color: var(--active-color);
 }
-.sign-footer{
+.socials__sign{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -547,11 +547,11 @@ footer {
     color: #FFFFFF;
     margin-bottom: 20px;
 }
-.socials-list-footer{
+.socials__list{
     display: flex;
     gap: 10px;
 }
-.social-link-footer{
+.socials__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -562,8 +562,8 @@ footer {
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link-footer:hover ,
-.social-link-footer:focus {
+.socials__link:hover ,
+.socials__link:focus {
     background-color: var(--active-color);
 }
 .submit-container{
