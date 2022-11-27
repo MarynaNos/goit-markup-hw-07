@@ -1,3 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    background-color: var(--background-color);
+}
+
 .main-title {
     max-width: 696px;
     margin: 0 auto;
@@ -9,6 +15,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .title-h2 {
     margin-bottom: 50px;
     font-weight: 700;
